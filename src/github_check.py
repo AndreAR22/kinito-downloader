@@ -18,7 +18,7 @@ def open_project(warn):
         pygame.mixer.Sound(os.path.join(EXE_LOCATION, 'update2.mp3')).play()
     import main
 
-if git_version < local_version:
+if git_version <= local_version:
     open_project(0)
 else:
     pygame.mixer.init()
