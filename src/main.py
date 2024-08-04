@@ -44,7 +44,6 @@ def extension_select(ex):
 extension_select("mp4")
 
 from pytubefix import YouTube
-from moviepy.editor import *
 import subprocess
 def Downloader():
     def delete(): dwnl.destroy(); btn["state"] = "normal"

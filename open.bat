@@ -25,6 +25,7 @@ REM Install Python dependencies
 python -m pip install pygame
 python -m pip install pillow
 python -m pip install pytubefix
+python -m pip install requests
 
 echo:
 echo Task finished successfully
