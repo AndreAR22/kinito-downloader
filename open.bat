@@ -26,5 +26,8 @@ python -m pip install pygame
 python -m pip install pillow
 python -m pip install pytubefix
 
-timeout /t 5
-START /MIN CMD.EXE /C python github_check.py
+echo:
+echo Task finished successfully
+echo Opening python file
+timeout /t 3
+START /MIN CMD.EXE /C python src/github_check.py
