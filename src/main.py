@@ -43,7 +43,7 @@ def extension_select(ex):
         mp3["state"] = "disabled"
 extension_select("mp4")
 
-from pytube import YouTube
+from pytubefix import YouTube
 from moviepy.editor import *
 import subprocess
 def Downloader():
