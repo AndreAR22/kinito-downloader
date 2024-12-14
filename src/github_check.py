@@ -2,7 +2,7 @@ import requests
 git_link= 'https://github.com/AndreAR22/kinito-downloader/releases/latest'
 response = requests.get(git_link)
 git_version = response.url.split('/').pop()
-local_version = 'v2.0'
+local_version = 'v2.01'
 
 from tkinter import *
 root = Tk()
@@ -14,16 +14,15 @@ EXE_LOCATION = os.path.dirname(os.path.realpath(__file__))
 def open_project(warn):
     root.destroy()
     if warn == 1:
-        kid.stop()
-        pygame.mixer.Sound(os.path.join(EXE_LOCATION, 'update2.mp3')).play()
+        pygame.mixer.Sound(os.path.join(EXE_LOCATION, 'no_tanks.mp3')).play()
     import main
 
 if git_version <= local_version:
     open_project(0)
 else:
     pygame.mixer.init()
-    kid = pygame.mixer.Sound(os.path.join(EXE_LOCATION, 'update1.mp3')).play()
+    # the kid was killed :33
     os.system("start "+str(git_link))
     Label(root, text="Download the latest version!!!11").pack()
-    button = Button(root, text="I DONT CARE\nSHUT THE FUCK UPPPPPPP", command=lambda: open_project(1)).pack()
+    button = Button(root, text="no xdd fuck u", command=lambda: open_project(1)).pack()
     root.mainloop()
