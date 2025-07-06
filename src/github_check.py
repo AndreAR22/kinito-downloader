@@ -2,7 +2,7 @@ import requests
 git_link= 'https://github.com/AndreAR22/kinito-downloader/releases/latest'
 response = requests.get(git_link)
 git_version = response.url.split('/').pop()
-local_version = 'v2.01'
+local_version = 'v2.1'
 
 from tkinter import *
 root = Tk()

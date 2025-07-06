@@ -24,7 +24,6 @@ if %errorlevel% neq 0 (
 REM Install Python dependencies
 python -m pip install pygame
 python -m pip install pillow
-python -m pip install pytubefix
 
 echo:
 echo Task finished successfully
